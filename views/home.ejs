@@ -1,73 +1,326 @@
 <% include partials/header %>
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<!--css -->
 
 <style>
- 
- .picture{
-   
- max-width: 100%;
-    height: auto; 
-  text-align: center;
- } 
- 
- .content{
-  font-family: 'Roboto', sans-serif;
- }
- 
- .about{
-  padding-bottom: 20px;
-  font-size: 50px;
- }
- 
- .sample ul{
-    float: left;
-    background-color: black;
+ html, body{
+    height:100%;
+}
+
+body{
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizelegibility;
+    color: #6c6f73;
+}
+
+h1,h2,h3,h4{
+    color: #333;
+}
+
+h6{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.blockquote{
+    font-size: 1.6rem;
+    color: #333;
+    border: none;
+    padding: 0;
+}
+
+.blockquote-footer{
+    margin: 1.rem 0 0;
+}
+
+#stage{
+    background: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21544149_1585489318140098_2883870716958605784_o.jpg?oh=2f5da221837a461cd40593d990d05fd2&oe=5A3A588D) center center no-repeat;
+    background-size: cover;
     color: white;
-    width: 200px;
-    height: 600px;
-    font-size: 20px;
-    list-style-type: none;
-  }
-  
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#stage-caption{
+    font-size: 1.4rem;
+    font-weight: 200;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#stage-caption, h1{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+img{
+    max-width: 100%;
+    
+}
+
+.section-content{
+    padding: 5rem;
+    color: black;
+}
+
+
+
+
+#intrests{
+    background: #567;
+}
+
+h3, .lead{
+    color: white;
+}
+
+.carousel-caption, h3, p{
+    color: black;
+}
+
+
+
+
+
+#main-footer{
+    background: #262F36;
+    color: white;
+    padding: 6rem 0;
+    font-size: 0.8rem;
+}
+
+#main-footer, h6{
+    color: #718FA9;
+}
+
+#main-footer, a{
+    color: #6c6f73;
+}
+
+.section-content{
+    padding: 5rem;
+    color: black;
+}
+
+#about{
+    background: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21752956_1585572011465162_6554315449962547631_o.jpg?oh=387fce331dd5c37a951c71fddec98281&oe=5A4BCA0F) center center no-repeat;
+    background-size: cover;
+}
+
+.about-text{
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1.875rem;
+}
+
+h5{
+    color: black;
+}
+ 
 </style>
 
-<!-- jumbotron -->
-<div class="jumbotron">
-  <div class="container">
-      <h1>Welcome!</h1>
-  <p>Front End Web Developer</p>
-  </div>
-</div>
+   <div id="stage">
+       <div id="stage-caption">
+           <h1 class="display-3">JB Web Samples</h1>
+           <p>My personal website </p>
+       </div>
+   </div>
+
+<!-- ======================= -->
+<!-- About Section           -->
+<!-- ======================= -->
+
+<section id="about">
+    <div class="section-content">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="about-text">
+                    <h3>About Me</h3>
+                        <p class="lead">Hi, My name is John Banks. Im origionally from Barstow, CA and currently live in San Jose, CA. 
+                        Over the past year I have made the decision a make a career change and learn web development. 
+                        I'm nowhere where I want be skill wise right now, but im constantly learning new things and coding everyday to improve my skills. 
+                        <p class="lead">
+                            Currently im a freelance delivery driver and a senior attending CSU East Bay studying kinesiology. 
+                            You can contact me by email(jbanks1120@gmail.com) or find me on one of my social media platforms below.
+                        </p>
+                       
+                        <h5>Follow me on the web</h5>
+                        <a href="https://www.linkedin.com/in/john-banks-236396134/" class="btn btn-sm btn-outline-secondary">Linkedin</a>
+                        <a href="https://www.facebook.com/john.banks.967" class="btn btn-sm btn-outline-secondary">Facebook</a>
+                        <a href="https://www.instagram.com/jaylovescandy/" class="btn btn-sm btn-outline-secondary">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+     
+   
+<!-- ======================= -->
+<!-- catagories section      -->
+<!-- ======================= -->
+
+<section id="catagories">
+    <div class="section-content">
+        <div class="container">
+            <h2>Portfolio Preview</h2>
+            <p>Click on any of the buttons under the picture to view my full portfolio. Im working on new projects everyday so it will be constantly updated as they are finished. </p>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">Yelp Camp</h4>
+                        </div>
+                        <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21728676_1583719624983734_4366046782320912146_o.jpg?oh=68a702f4d02cfd1a2afdf612ba8c121b&oe=5A5B697D" alt="a chalkboard">
+                        <div class="card-block">
+                            <p class="card-text">Udemy front and backend project of a yelp-type campsite website with a database, and authentication.
+                            </p>
+                            <a href="/portfolio" class="btn btn-outline-info">View Portfolio</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">Bootstrap 4 site</h4>
+                        </div>
+                        <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21686753_1589806577708372_3792940750397596708_o.jpg?oh=2f80830d20bc5c671da6e805ef023c6f&oe=5A4EDDF0" alt="working">
+                        <div class="card-block">
+                            <p class="card-text">Sample  personal webpage templet made with Bootstrap 4.</p>
+                            <a href="/portfolio" class="btn btn-outline-info">View Portfolio</a>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-block">
+                            <h4 class="card-title">Bootstrap 4 startup site</h4>
+                        </div>
+                        <img src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/21687192_1589806581041705_5019615191559260165_o.jpg?oh=a09e4d273f4b0c1adf19ba94bfb857e8&oe=5A3DB2D8" alt="working">
+                        <div class="card-block">
+                            <p class="card-text">Sample startup webpage templet made with Bootstrap 4.</p>
+                            <a href="/portfolio" class="btn btn-outline-info">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+   
 
 
+<!-- ======================= -->
+<!-- intrests Section        -->
+<!-- ======================= -->
 
-<!-- pic goes here -->
-<div class="container">
+<section id="intrests">
+    <div class="section-content">
+        <div class="container">
+            <h3>My Intrests</h3>
+            <p class="lead">Here are a few of the things im passionate about in my life</p>
+            
+            <hr>
+            
+            <div class="row col-sm-12">
+                
+                <div class="card-columns">
+                  <div class="card">
+                    <img class="card-img-top" src="https://usatftw.files.wordpress.com/2017/07/kobe-champion.jpg?w=1000&h=600&crop=1" alt="beach">
+                    <div class="card-body">
+                      <h4 class="card-title">Sports</h4>
+                      <p class="card-text">I love sports! basketball is my favorite out of the 4 major sports, but footbal is a close second.</p>
+                    </div>
+                  </div>
+                  <div class="card p-3">
+                    <blockquote class="blockquote mb-0 card-body">
+                      <p>Technology of any kind is something I have a great intrest in.
+                      I've always been facinated in how tech works and I try to stay updated with all the new tech stuff coming out.</p>
+                      <footer class="blockquote-footer">
+                        <small class="text-muted">
+                          Someone famous in <cite title="Source Title">Source Title</cite>
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="http://orig11.deviantart.net/c627/f/2014/342/e/6/_the_legend_of_zelda__my_hero_link_x_reader_part_1_by_the_fruit_pantry-d6pciq8.png" alt="link">
+                    <div class="card-body">
+                      <h4 class="card-title">Video Games</h4>
+                      <p class="card-text">Video Games are a hobby I've enjoyed since I was a kid. 
+                      For the last few years I haven't been able to paly as much as I would like,
+                      but I my love of games have never changed.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card bg-primary p-3 text-center">
+                    <blockquote class="blockquote mb-0">
+                      <p>Health and fitness is a very important part of my life, and I like working out and improving myself mentally and physically.</p>
+                      <footer class="blockquote-footer">
+                        <small>
+                          Someone famous in <cite title="Source Title">Source Title</cite>
+                        </small>
+                      </footer>
+                    </blockquote>
+                  </div>
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h4 class="card-title">Anime</h4>
+                      <p class="card-text">I got into anime as a teenager and haven't stopped watching it since. My favorite was the first one I was introduced to, DragonBall Z, but there are many great shows I do currenty watch. </p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img" src="http://www.hobbyconsolas.com/sites/hobbyconsolas.com/public/styles/main_element/public/media/image/2017/05/dragon-ball-z-dokkan-battle.jpg?itok=wfVvCUaj" alt="link">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
 
+<!-- ======================= -->
+<!-- Footer Section          -->
+<!-- ======================= --> 
 
+<footer id="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+              &copy; 2017 John Banks Web Samples.    
+            </div>
+            <div class="col-md-2">
+               <h6>Web Pages</h6>
+                <ul class="list-unstyled">
+                    <li><a href="/resume">Resume</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/jrbanks">Github</a></li>
+                    <li><a href="https://codepen.io/jaybanks/">Codepen</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Social Media</h6>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/john.banks.967">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/jaylovescandy/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/john-banks-236396134/">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
-<div class="picture">
- 
-<img class="profilepic" src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-19/s150x150/14676732_1757012687885835_3719243293796597760_a.jpg" alt="profilepic">
-<h2 class="about">About Me</h2>
-</div>
-
-<!-- content --> 
-
-
-<div class="content">
-<h2> Hi, My name is John Banks and im currently a senior attending CSUEB studying kinesiology. Im origionally from Barstow, CA and currently live in San Jose, CA. Im a self taught front end web developer learning for the past year. What I like to do in my free time are playing videogames, watching and playing sports (favorite is basketball). </h2>   
-<!-- <h3> hey guys, just testing it the site works on phones for right now and checking if all the links work and go the the right pages. let me know if something doesnt look right, and let me know of a project to make to add to the site if any of you can thing of anything.</h3>-->
-</div>
-
-
-
-
-
-
-
-
-
-<% include partials/footer %>
-</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>
