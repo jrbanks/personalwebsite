@@ -14,7 +14,7 @@
  
 
 
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kalam:700" rel="stylesheet">
 <!--css -->
 
 <style>
@@ -52,3 +52,11 @@
   </div>
 </nav>   
    
+<script>
+  $('.nav div ul li a').on('click', function(event){
+    event.preventDefault();
+    var target = $(this).attr('href');
+    var offsetTop = $(target).offset().top;
+    $('html, body').animate({scrollTop:offsetTop},1000);
+  });
+</script>
